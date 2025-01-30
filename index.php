@@ -1,5 +1,6 @@
 <?php
-    include_once __DIR__ . './src/header.inc.php'
+    include_once __DIR__ . './src/header.inc.php';
+    include_once __DIR__ . './src/connect_bdd.inc.php';
 ?>
 <body>
     <header>
