@@ -7,9 +7,6 @@
         <h1>PHP - articles and post</h1>
     </header>
     <main>
-        <?php
-            include_once __DIR__ . '/article.php';
-        ?>
         <!-- partie dynamique: date et version -->
         <h2>Nous sommes le <?= date("d/m/Y - H:i:s")?></h2>
             <p>
