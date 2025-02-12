@@ -1,8 +1,7 @@
 <?php
     include_once "./src/header.inc.php";
     include_once "./src/connect_bdd.inc.php";
-    print "\n<body>";
-    $_datetime = date("Y");
+    print "\n<body>"
 ?>
 
 <header>
@@ -43,7 +42,7 @@
             <h2>
                 <?= strip_tags($_article['titre'])?>
                 <!-- numéro de l'article -->
-              
+                <?= " article numéro ".$_article['id']?>
             </h2>
             <p>
                 <?= $_article['contenu']?>

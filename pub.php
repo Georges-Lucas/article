@@ -1,8 +1,8 @@
 <?php
-    include_once "./src/header.inc.php";
-    include_once "./src/connect_bdd.inc.php";
+    include_once __DIR__.'/src/header.inc.php';
+    include_once __DIR__."./src/connect_bdd.inc.php";
     print "\n<body>";
-    $_datetime = date("Y");
+    
 ?>
 
     <header>
@@ -11,7 +11,7 @@
 <main>
 <div class="form" role="region">
 <?php
-    include_once "./src/traitement.inc.php";
+    include_once __DIR__ ."/src/traitement.inc.php";
 ?>
     <fieldset>
         <legend>Poster vos publications</legend>

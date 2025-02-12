@@ -1,3 +1,4 @@
+<!--itération avec la bdd -->
 <?php
     include_once "connect_bdd.inc.php";
 ?>
@@ -15,8 +16,9 @@
 
         </p>
         <time datetime="<?= $_article['date_modification']?>">
-            Date de modification : <?=$_article['date_modification']?>
+            Date de modification : <?= $_article['date_modification']?>
         </time>
+        
         <span class="material-symbols-outlined" aria-hidden="true">
                 thumb_up
             </span>

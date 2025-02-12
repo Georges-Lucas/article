@@ -6,6 +6,8 @@ body{
     font: 1.6rem sans-serif;
     background-color: #222;
     color: #fff;
+    letter-spacing: .1rem;
+
 }
 *{
     box-sizing: border-box;
@@ -23,11 +25,25 @@ a{
     margin-right: 1rem;
  }
 
+ .material-symbols-outlined{
+    display: inline-block;
+    vertical-align: -.3rem;
+    margin: 0 1rem;
+    user-select: none;
+ }
+ img{
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+ }
+
 /* theme */
 
 :root{
     --color-default: #292F33;
-    --color-primary: #55ACEE;
+    --color-primary: #0f5c97;
     --color-secondary: #66757F;
     --color-warning: #d63031;
     --color-success: #00b894;
@@ -61,7 +77,15 @@ header h1::before{
     vertical-align: .2rem;
     margin-right: .3rem;
 }
-
+picture{
+    max-width: 80rem;
+    margin: 0 auto;
+    display: block;
+    padding: 1rem;
+}
+picture img{
+    border-radius: .4rem;
+}
 nav ul{
     list-style: none;
     padding: 1rem 0;
@@ -103,22 +127,25 @@ article h2{
     color: #fff;
     padding: .5rem;
     margin: inherit;
+   
 }
 article h2 a{
     color: inherit;
+    text-shadow: -.1rem -.1rem .1rem #222;
 }
 article p{
     color: #fff;
     background-color: var(--color-secondary);
     padding: .5rem;
     margin: inherit;
-   /*  user-select: none; */ /* pas d'édition du texte*/
+    user-select: none; /* pas d'édition du texte*/
 }
 article time{
     color: #fff;
 }
 
 /* formulaire */
+
 .form fieldset legend{
     font-size: x-large;
     padding-bottom: 1rem;
